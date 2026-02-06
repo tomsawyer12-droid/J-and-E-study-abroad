@@ -8,8 +8,8 @@ export function ContactPage() {
         {/* Background */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1516383740770-fbcc5c24770d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-            alt="Contact"
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop"
+            alt="Study Abroad Student"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', zIndex: 1 }}></div>
@@ -23,8 +23,10 @@ export function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Component */}
-      <Contact />
+      {/* Contact Component - Overlapping the hero */}
+      <div className="relative z-20 -mt-24 pb-20">
+        <Contact />
+      </div>
     </div>
   );
 }
